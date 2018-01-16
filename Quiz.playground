@@ -1,0 +1,10 @@
+func removeFor(text: String) -> String {
+    let okayChars = Set("abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLKMNOPQRSTUVWXYZ1234567890 ")
+    var str = ""
+    for char in text {
+        if okayChars.contains(char) {
+            str.append(char)
+        }
+    }
+    return str
+}
